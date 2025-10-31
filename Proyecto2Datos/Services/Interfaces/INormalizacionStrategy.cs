@@ -1,6 +1,11 @@
-﻿namespace Proyecto2Datos.Services.Interfaces;
+﻿using Proyecto2Datos.Model;
+using System.Collections.Generic;
 
-public class INormalizacionStrategy
+namespace Proyecto2Datos.Services.Normalizacion
 {
-    
+    public interface INormalizacionStrategy
+    {
+        void Normalizar(List<DataPoint> puntos);
+        string Nombre { get; }
+    }
 }

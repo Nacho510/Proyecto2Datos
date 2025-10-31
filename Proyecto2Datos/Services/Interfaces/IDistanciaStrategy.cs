@@ -1,6 +1,10 @@
-﻿namespace Proyecto2Datos.Services.Interfaces;
+﻿using Proyecto2Datos.Model;
 
-public class IDistanciaStrategy
+namespace Proyecto2Datos.Services.Distancias
 {
-    
+    public interface IDistanciaStrategy
+    {
+        float Calcular(Vector v1, Vector v2);
+        string Nombre { get; }
+    }
 }
